@@ -1,20 +1,29 @@
-* {
+﻿* {
 	box-sizing: border-box;
 }
 
 body {
 	background-image:url("back_ground.png");
-	font-family: Cambria, Times, serif;
+	background-attachment: fixed;
+	min-height:100%;
+	min-width:100%;
+	width:100%;
+	height:auto;
+	position:relative;	
+	overflow:hidden;
 }
 
+ .bg{
+	
+ }
  .topnav {
  	overflow: hidden;
 	background-color:black;
 	font-weight:bold;
 	border-radius: 12px;
-	margin-botton: 2px;
-	position:fixed;
-	width:99%;
+	margin: -10px;
+	position:absolute;
+	width:100%;
 	box-shadow: 3px 5px #776876;
 }
 
@@ -23,15 +32,16 @@ body {
 	display:block;
 	color:white;
 	text-align:center;
-	padding: 10px 12px;
+	padding: 10px 10px;
 	text-decoration:none;
-	font-size:15px;
+	font-size:18px;
 	cursor: pointer;
 	outline: none;
 	border: 1 px;
 	border-radius: 2px;
 	background-color: #000000;
 	width:20%;
+	user-select: none;
 }
 
  .button:hover {
@@ -42,3 +52,104 @@ body {
  .button:active {
 	transform: scale(1.15,1.15);
 }
+
+ .main {
+	padding-top: 3%;
+	margin:-2px
+	 
+ }
+ 
+ .row {
+	 position:relative;
+ }
+ 
+ .column{
+	 float: left;
+	 width: 33.33%;
+	 height: 800px;
+	 font-size:25px;
+ }
+ 
+  #column1{
+	  background-image:url("left_columnBG.png");
+	  background-repeat:repeat-y;
+	  width:25%;
+	  margin:-6px;
+	  color:white;
+	  text-indent:-40%;
+	  text-align:center;
+	  display:block;
+	  
+  }
+  
+  #column2{
+	  width: 50%;
+	  display:block;
+	  margin-left:auto;
+	  margin-right:auto;
+  }
+  
+  #column3 {
+	  background-image:url("right_columnBG.png");
+	  background-repeat:repeat-y;
+	  width:25%;
+	  margin:-6px;
+	  color:white;
+	  text-indent:-40%;
+	  text-align:center;
+	  display:block;
+	  position:absolute;
+	  right:-15px;
+  }
+  
+  #canvas{
+	  background-image:url("canv_bg.png");
+	  width:100%;
+	  height:100%;
+	  border:1px solid red;
+  }
+  
+  
+  .stats {
+	  color: white;
+	  
+  }
+  
+ .level {
+	  position:relative;
+	  bottom: -45%;
+	  vertical-align:bottom;
+	  
+  }
+  
+  .row:after{
+	  content: "";
+	  display: table:
+	  clear: both;
+  }
+  
+  
+  footer {
+	overflow: hidden;
+	background-color:black;
+	font-weight:bold;
+	margin: -10px;
+	position:absolute;
+	bottom:-870px;
+	width:101%;
+  }
+  
+  #footer{
+	float:left;
+	display:block;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-size:15px;
+	outline: none;
+	border: 0px;
+	background-color: #111111;
+	width:25%;
+	user-select: none;
+	vertical-align:bottom;
+  }
